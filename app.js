@@ -1,5 +1,5 @@
-const sheetID = "YOUR_SHEET_ID_HERE";   // Google Sheet ID
-const apiKey = "YOUR_API_KEY_HERE";     // Google API key
+const sheetID = "1ezaXLDNtISfr36vZcuso1YNSgvR8lNn7d3yL19J8n8w";   // Google Sheet ID
+const apiKey = "AIzaSyDD3XZ-lH9-a36TSmKNL-NBUYsNl_rzcgI";     // Google API key
 
 fetch(`https://sheets.googleapis.com/v4/spreadsheets/${sheetID}/values/data?key=${apiKey}`)
   .then(res => res.json())
@@ -48,3 +48,4 @@ fetch(`https://sheets.googleapis.com/v4/spreadsheets/${sheetID}/values/data?key=
     calendar.render();
   })
   .catch(err => console.error(err));
+
